@@ -96,12 +96,22 @@ To run your tagged image
 ```bash
     docker run 
 ```
+#### Tagging and running a container
+```bash
+  docker run -p port:port -d --name <name_ur_container> <image_name>
+```
 #### Port Mapping
 The mapping of port helps u to route traffic to your container. 
 To change your container_port, do change the port your `app.listening(xxxx,cb` too.
 ```bash
     docker run -p <source_port>:<container_port> <image_name>
 ```
+#### Remove a container
+```bash
+  docker rm <image_name> -f
+```
+
+## dockerignore
 
 
 ## Dockerfile.dev
